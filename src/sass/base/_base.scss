@@ -1,0 +1,34 @@
+*,
+::before,
+::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+section {
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	transition: all 150ms ease-in-out;
+}
+
+button {
+	transition: all 150ms ease-in-out;
+}
+
+sup {
+	color: #f69d52;
+}
+

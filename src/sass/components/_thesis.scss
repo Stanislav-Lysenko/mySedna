@@ -1,0 +1,37 @@
+.thesis {
+	position: relative;
+}
+
+.thesis[data-icon]::before{
+	position: absolute;
+	left: 0;
+	font-size: 4em;
+	color: $palette-quaternary;
+	padding-top: 0.6em;
+}
+
+.thesis[data-icon] > .thesis__content {
+	margin-left: 6rem;
+}
+
+.thesis__content {
+	width: 80%;
+}
+
+.thesis__icon {
+	position: absolute;
+	left: 0;
+	font-size: 4em;
+	color: $palette-quaternary;
+	padding-top: 0.6em;
+}
+
+.thesis__title {
+	color: $palette-tertiary;
+	text-transform: uppercase;
+	margin: 1em 0;
+}
+
+.thesis__text {
+	margin: 2rem 0;
+}

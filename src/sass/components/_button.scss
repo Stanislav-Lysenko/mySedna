@@ -1,0 +1,55 @@
+//buttons elipse
+.btn {
+	font-size: 1.3rem;
+	display: inline-block;
+	border: 2px solid;
+	border-radius: 4em;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	border-color: $btn-primary-color;
+	color: $btn-primary-color;
+	white-space: nowrap;
+}
+
+.btn:hover, .btn:focus {
+	color: $btn-secondary-color;
+	border-color: $btn-secondary-color;
+
+}
+
+.btn_fill {
+	background-color: $btn-secondary-color;
+	border-color: $btn-secondary-color;
+}
+
+.btn_fill:hover, .btn_fill:focus {
+	color: $btn-primary-color;
+	border-color: $btn-tertiary-color;
+	background-color: $btn-tertiary-color;
+}
+
+.btn_small {
+	padding: 0.615em 3.077em;
+}
+
+.btn_large {
+	padding: 1.154em 3.077em;
+}
+
+.btn_accent {
+	color: $btn-secondary-color;
+	border-color: $btn-secondary-color;
+}
+
+.btn_accent:hover, .btn_accent:focus {
+	color: $btn-primary-color;
+	background-color: $btn-secondary-color;
+}
+
+
+
+
+
+
+

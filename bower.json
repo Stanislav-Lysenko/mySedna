@@ -1,0 +1,29 @@
+{
+  "name": "mysedna",
+  "description": "landing page Sedna template",
+  "main": "index.js",
+  "authors": [
+    "Lysenko Stanislav"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "landing",
+    "page",
+    "website",
+    "template"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap4-grid-only": "^4.1.3",
+    "normalize-css": "normalize.css#^8.0.1",
+    "Font-Awesome": "^5.9.0",
+    "etlinefont-bower": "^1.0.1"
+  }
+}

@@ -1,0 +1,35 @@
+// h1, h2, h3, h4, h5, h6 base styles and sizes from list $titles-size
+@mixin base-title($size, $style: $font-primary, $light-color: $palette-primary
+) {
+	font-style: $style;
+	font-size: $size;
+	line-height: 1.1;
+	font-weight: 500;
+	color: $light-color;
+
+}
+
+@mixin generate-titles {
+	@each $h-num, $size in $titles-size {
+		#{$h-num} {
+			@include base-title($size);
+		}
+	}
+}
+
+
+//Breakpoints for mediaqueries (min-width: 64.1em) @and
+@mixin breakpoint($point) {
+	@if $point == large {
+		@media (max-width: 75em) { @content; }
+	}
+	@else if $point == medium {
+		@media (max-width: 62em) { @content; }
+	}
+	@else if $point == small {
+		@media (max-width: 34em ) { @content; }
+	}
+	@else if $point == extrasmall {
+		@media (max-width: 30em) { @content; }
+	}
+}

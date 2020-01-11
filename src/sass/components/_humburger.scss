@@ -1,0 +1,67 @@
+.humburger {
+	position: absolute;
+	right: 1em;
+	visibility: hidden;
+}
+
+.humburger {
+	@include breakpoint(medium) {
+		visibility: visible;
+	}
+	@include breakpoint(small) {
+		visibility: visible;
+	}
+}
+
+.humburger__toggle {
+	position: relative;
+	display: block;
+	width: 44px;
+	height: 44px;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+
+.humburger__toggle span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	top: 20px;
+	left: 4px;
+	right: 4px;
+	background: $primary-bg-color;
+}
+
+.humburger__toggle.is-active span {
+	background: none;
+}
+
+.humburger__toggle span::after, .humburger__toggle span::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	height: 3px;
+	width: 100%;
+	background: $primary-bg-color;
+}
+
+.humburger__toggle span::before {
+	top: -10px;
+}
+
+.humburger__toggle span::after {
+	bottom: -10px;
+}
+
+.humburger__toggle.is-active span::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.humburger__toggle.is-active span::after {
+	bottom: 0;
+	transform: rotate(-45deg);
+}
+
+
